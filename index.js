@@ -2,7 +2,7 @@ import expect from 'expect';
 
 let solved = 0;
 let solvedBonus = 0;
-const toSolve = 16;
+const toSolve = 17;
 const toSolveBonus = 9;
 
 try {
@@ -310,7 +310,7 @@ try {
 	})();
 	
 
-  /*
+  
 	(function UseObjectSpreadProperties2() {
 		let obj1 = { a: 100, b: 2, c: 300 };
 		let obj2 = { b: 0, d: 100, e: 200};
@@ -320,7 +320,8 @@ try {
 		// - Do NOT use Object.assign()
 		// - Do use object spread properties
 		// - Think about the order!
-		let result = { obj1, obj2, obj3 };
+		let result = { ...obj1, obj2, ...obj3, ...obj2 };
+		console.log(result);
 
 		// Don't make changes below this line	
 		
@@ -332,7 +333,7 @@ try {
 
 		solved++;
 	})();
-	*/
+	
 
   ////// BONUS //////
 
